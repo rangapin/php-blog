@@ -36,6 +36,7 @@
   appearance: 0;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -97,7 +98,7 @@ img {
   object-fit: cover;
 }
 
-/* NAVBAR*/
+/* NAVBAR */
 
 nav {
   background: var(--color-primary);
@@ -157,7 +158,7 @@ nav button {
   transition: var(--transition);
 }
 
-/* NAVBAR HOVERED*/
+/* NAVBAR HOVERED */
 
 .nav__profile:hover > ul {
   visibility: visible;
@@ -176,7 +177,7 @@ nav button {
   color: var(--color-bg);
 }
 
-/* CATEGORY BUTTON*/
+/* CATEGORY BUTTON */
 
 .category__button {
   background: var(--color-primary-light);
@@ -333,7 +334,6 @@ footer ul a:hover {
 
 .search__bar-container {
   position: relative;
-  width: 30rem;
   background: var(--color-gray-900);
   display: flex;
   align-items: center;
@@ -345,9 +345,9 @@ footer ul a:hover {
 }
 
 .search__bar-container > div {
+  width: 100%;
   display: flex;
   align-items: center;
-  width: 100%;
 }
 
 .search__bar input {
@@ -364,15 +364,116 @@ footer ul a:hover {
 /* BUTTON STYLE */
 
 .btn {
-    display: inline-block;
-    width: fit-content;
-    padding: 0.6rem 1.2rem;
-    background-color: var(--color-primary);
+  display: inline-block;
+  width: fit-content;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--color-primary);
+  border-radius: var(--card-border-radius-2);
+  cursor: pointer;
+  transition: var(--transition);
+  color: var(--color-white);
+}
+
+/* SINGLE POST PAGE */
+
+.singlepost {
+  margin: 6rem 0 2rem;
+}
+
+.singlepost__container {
+  width: var(--form-width);
+  background: var(--color-gray-900);
+  padding: 1rem 2rem 3rem;
+}
+
+.singlepost__container p {
+  margin-top: 1rem;
+  line-height: 1.7;
+}
+
+.singlepost__thumbnail {
+  margin: 1.5rem 0 1rem;
+}
+
+/* CATEGORY POST */
+
+.category__title {
+    height: 15rem;
+    margin-top: 4.5rem;
+    background: var(--color-gray-900);
+    display: grid;
+    place-items: center;
+}
+
+/* EMPTY PAGE */
+
+.empty__page {
+    height: 70vh;
+    text-align: center;    
+    display: grid;
+    place-items: center;
+}
+
+/* GENERAL FORM */
+
+.form__section {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.form_section-container {
+    width: var(--form-width);
+}
+
+.alert__message {
+    padding: 0.8rem 1.4rem;
+    margin-bottom: 1rem;
     border-radius: var(--card-border-radius-2);
-    cursor: pointer;
-    transition: var(--transition);
-    color: var(--color-white);
-  }
+}
+
+.alert__message.error {
+    background: var(--color-red-light);
+    color: var(--color-red);
+}
+
+.alert__message.success {
+    background: var(--color-green-light);
+    color: var(--color-green);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form__control {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.form__control.inline {
+    flex-direction: row;
+    align-items: center;
+}
+
+input, textarea, select {
+   padding: 0.8rem 1.4rem;
+   background-color: var(--color-gray-900);
+   border-radius: var(--card-border-radius-2);
+   color: var(--color-white);
+}
+
+.form__section small {
+    margin-top: 1rem;
+    display: block;
+}
+
+.form__section small a {
+    color: var(--color-primary);
+}
 
 /* MEDIA QUERIES */
 
@@ -439,7 +540,7 @@ footer ul a:hover {
     animation-delay: 800ms;
   }
 
-  /* ANIMATIONS */
+/* MQ ANIMATIONS */
 
   @keyframes animateDropdown {
     0% {
@@ -483,15 +584,19 @@ footer ul a:hover {
   .footer__container {
     grid-template-columns: 1fr 1fr;
   }
-
-  /* BLOG PAGE */
+/* MQ BLOG PAGE */
 
   .search__bar-container {
     width: 60%;
-  }
 }
 
-/* MEDIA QUERIES SMALL DEVICES*/
+/* MQ GENERAL FORM */
+
+  .form__section-container {
+    padding: 3rem;
+}
+
+/* MEDIA QUERIES SMALL DEVICES */
 
 @media screen and (max-width: 600px) {
   section {
@@ -521,4 +626,14 @@ footer ul a:hover {
   .search__bar-container {
     width: var(--container-width-md);
   }
+
+/* MQ SMALL SINGLE POST PAGE */
+
+  .singlepost__container {
+    background-color: transparent;   
+    padding: 0;
+}
+  .form__section-container {
+    padding: 0rem;
+}
 }
