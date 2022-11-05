@@ -21,7 +21,7 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <!--<li><a href="signin.html">Signin</a></li> --> 
+                <!--<li><a href="signin.html">Signin</a></li> -->
                 <li class="nav__profile">
                     <div class="avatar">
                         <img src="./images/avatar1.jpg" alt="avatar">
@@ -38,8 +38,36 @@
         </div>
     </nav>
 
-    <section class="empty__page">
-        <h1>About Page</h1>
+
+    <section class="form__section">
+        <div class="container form__section-container">
+            <h2>Add Post</h2>
+            <div class="alert__message error">
+                <p>This is an error</p>
+            </div>
+            <form action="" enctype="multipart/form-data">
+                <input type="text" placeholder="Title">
+                <select>
+                    <option value="1">Sport</option>
+                    <option value="1">Art</option>
+                    <option value="1">Travel</option>
+                    <option value="1">Mechanics</option>
+                    <option value="1">Freediving</option>
+                    <option value="1">Yoga</option>
+                    <option value="1">Random stuff</option>
+                </select>
+                <textarea placeholder="Body" rows="10"></textarea>
+                <div class="form__control inline">
+                    <input type="checkbox" id="is_featured" checked>
+                    <label for="is_featured">Featured?</label>
+                </div>
+                <div class="form__control">
+                    <label for="thumbnail">Add thumbnail</label>
+                    <input type="file" id="thumbnail">
+                </div>
+                <button class="btn" type="submit">Add Post</button>
+            </form>
+        </div>
     </section>
 
     <footer>
@@ -94,13 +122,12 @@
                     <li><a href="">Old STuff</a></li>
                 </ul>
             </article>
-            </div>
-            <div class="footer__copyright">
-                <small>Copyright @ 2022 Richard Angapino</small>
-            </div>
-        </div>     
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright @ 2022 Richard Angapino</small>
+        </div>
+        </div>
     </footer>
-    
-    <script src="./main.js"></script>
 </body>
+
 </html>

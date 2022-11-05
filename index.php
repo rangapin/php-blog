@@ -1,46 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include 'partials/header.php';
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <!--stylesheet-->
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800;900&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <nav>
-        <div class="container nav__container">
-            <a href="index.html" class="nav__logo">BLOG</a>
-            <ul class="nav__items">
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <!--<li><a href="signin.html">Signin</a></li> --> 
-                <li class="nav__profile">
-                    <div class="avatar">
-                        <img src="./images/avatar1.jpg" alt="avatar">
-                    </div>
-                    <ul>
-                        <li><a href="dashboard.html">Dashboard</a></li>
-                        <li><a href="logout.html">Logout</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <button id="open__nav-btn"><i class="uil uil-bars"></i></button>
-            <button id="close__nav-btn"><i class="uil uil-multiply"></i></button>
+<section class="featured">
+    <div class="container featured__container">
+        <div class="post__thumbnail">
+            <img src="./images/blog1.jpg" alt="">
         </div>
-    </nav>
-
-<header class="category__title">
-    <h2>Category Title</h2>
-</header>
+        <div class="post__info">
+            <a href="category-post.php" class="category__button">Wild Life</a>
+            <h2 class="post__title"><a href="post.php">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </a></h2>
+            <p class="post__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="post__author">
+                <div class="post__author-avatar">
+                    <img src="./images/avatar1.jpg" alt="">
+                </div>
+                <div class="post__author-info">
+                    <h5>By: Richy Rich</h5>
+                    <small>June 10, 2022 - 07:23 AM</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="posts">
     <div class="container posts__container">
@@ -49,9 +33,9 @@
                 <img src="./images/blog2.jpg" alt="">
             </div>
             <div class="post__info">
-                <a href="category-post.html" class="category__button">Wild Life</a>
-                <h3 class="post__title"><a href="post.html">Lorem ipsum dolor sit, amet consectetur adipisicing elit
-                </a>
+                <a href="category-posts.php" class="category__button">Wild Life</a>
+                <h3 class="post__title"><a href="post.php">Lorem ipsum dolor sit, amet consectetur adipisicing elit
+                    </a>
                 </h3>
                 <p class="post__body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit et, assumenda ratione sit quod rem reiciendis tempora, laudantium, voluptatibus ullam aspernatur perspiciatis nisi? Illo ratione cupiditate optio odio dolore possimus.
@@ -73,9 +57,9 @@
                 <img src="./images/blog3.jpg" alt="">
             </div>
             <div class="post__info">
-                <a href="category-post.html" class="category__button">Wild Life</a>
-                <h3 class="post__title"><a href="post.html">Lorem ipsum dolor sit, amet consectetur adipisicing elit
-                </a>
+                <a href="category-posts.php" class="category__button">Wild Life</a>
+                <h3 class="post__title"><a href="post.php">Lorem ipsum dolor sit, amet consectetur adipisicing elit
+                    </a>
                 </h3>
                 <p class="post__body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit et, assumenda ratione sit quod rem reiciendis tempora, laudantium, voluptatibus ullam aspernatur perspiciatis nisi? Illo ratione cupiditate optio odio dolore possimus.
@@ -97,9 +81,9 @@
                 <img src="./images/blog4.jpg" alt="">
             </div>
             <div class="post__info">
-                <a href="category-post.html" class="category__button">Wild Life</a>
-                <h3 class="post__title"><a href="post.html">Lorem ipsum dolor sit, amet consectetur adipisicing elit
-                </a>
+                <a href="category-posts.php" class="category__button">Wild Life</a>
+                <h3 class="post__title"><a href="post.php">Lorem ipsum dolor sit, amet consectetur adipisicing elit
+                    </a>
                 </h3>
                 <p class="post__body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit et, assumenda ratione sit quod rem reiciendis tempora, laudantium, voluptatibus ullam aspernatur perspiciatis nisi? Illo ratione cupiditate optio odio dolore possimus.
@@ -121,9 +105,9 @@
                 <img src="./images/blog5.jpg" alt="">
             </div>
             <div class="post__info">
-                <a href="category-post.html" class="category__button">Wild Life</a>
-                <h3 class="post__title"><a href="post.html">Lorem ipsum dolor sit, amet consectetur adipisicing elit
-                </a>
+                <a href="category-posts.php" class="category__button">Wild Life</a>
+                <h3 class="post__title"><a href="post.php">Lorem ipsum dolor sit, amet consectetur adipisicing elit
+                    </a>
                 </h3>
                 <p class="post__body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit et, assumenda ratione sit quod rem reiciendis tempora, laudantium, voluptatibus ullam aspernatur perspiciatis nisi? Illo ratione cupiditate optio odio dolore possimus.
@@ -145,9 +129,9 @@
                 <img src="./images/blog6.jpg" alt="">
             </div>
             <div class="post__info">
-                <a href="category-post.html" class="category__button">Wild Life</a>
-                <h3 class="post__title"><a href="post.html">Lorem ipsum dolor sit, amet consectetur adipisicing elit
-                </a>
+                <a href="category-posts.php" class="category__button">Wild Life</a>
+                <h3 class="post__title"><a href="post.php">Lorem ipsum dolor sit, amet consectetur adipisicing elit
+                    </a>
                 </h3>
                 <p class="post__body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit et, assumenda ratione sit quod rem reiciendis tempora, laudantium, voluptatibus ullam aspernatur perspiciatis nisi? Illo ratione cupiditate optio odio dolore possimus.
@@ -169,9 +153,9 @@
                 <img src="./images/blog7.jpg" alt="">
             </div>
             <div class="post__info">
-                <a href="category-post.html" class="category__button">Wild Life</a>
-                <h3 class="post__title"><a href="post.html">Lorem ipsum dolor sit, amet consectetur adipisicing elit
-                </a>
+                <a href="category-posts.php" class="category__button">Wild Life</a>
+                <h3 class="post__title"><a href="post.php">Lorem ipsum dolor sit, amet consectetur adipisicing elit
+                    </a>
                 </h3>
                 <p class="post__body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit et, assumenda ratione sit quod rem reiciendis tempora, laudantium, voluptatibus ullam aspernatur perspiciatis nisi? Illo ratione cupiditate optio odio dolore possimus.
@@ -192,74 +176,16 @@
 
 <section class="category__buttons">
     <div class="container category__buttons-container">
-        <a href="category-post.html" class="category__button">Art</a>
-        <a href="category-post.html" class="category__button">Science</a>
-        <a href="category-post.html" class="category__button">Food</a>
-        <a href="category-post.html" class="category__button">Music</a>
-        <a href="category-post.html" class="category__button">Wild Life</a>
-        <a href="category-post.html" class="category__button">Freediving</a>
+        <a href="category-posts.php" class="category__button">Art</a>
+        <a href="category-posts.php" class="category__button">Science</a>
+        <a href="category-posts.php" class="category__button">Food</a>
+        <a href="category-posts.php" class="category__button">Music</a>
+        <a href="category-posts.php" class="category__button">Wild Life</a>
+        <a href="category-posts.php" class="category__button">Freediving</a>
     </div>
 </section>
 
-<footer>
-    <div class="footer__socials">
-        <a href="www.youtube.com" target="_blank"><i class="uil uil-youtube"></i></a>
-        <a href="www.facebook.com" target="_blank"><i class="uil uil-facebook"></i></a>
-        <a href="www.linkedin.com" target="_blank"><i class="uil uil-linkedin"></i></a>
-        <a href="www.twitter.com" target="_blank"><i class="uil uil-twitter"></i></a>
-    </div>
-    <div class="container footer__container">
-        <article>
-            <h4>Categories</h4>
-            <ul>
-                <li><a href="">Art</a></li>
-                <li><a href="">Music</a></li>
-                <li><a href="">Travel</a></li>
-                <li><a href="">Freediving</a></li>
-                <li><a href="">New stuff</a></li>
-                <li><a href="">Old STuff</a></li>
-            </ul>
-        </article>
-        <article>
-            <h4>Support</h4>
-            <ul>
-                <li><a href="">Art</a></li>
-                <li><a href="">Music</a></li>
-                <li><a href="">Travel</a></li>
-                <li><a href="">Freediving</a></li>
-                <li><a href="">New stuff</a></li>
-                <li><a href="">Old STuff</a></li>
-            </ul>
-        </article>
-        <article>
-            <h4>Blog</h4>
-            <ul>
-                <li><a href="">Art</a></li>
-                <li><a href="">Music</a></li>
-                <li><a href="">Travel</a></li>
-                <li><a href="">Freediving</a></li>
-                <li><a href="">New stuff</a></li>
-                <li><a href="">Old STuff</a></li>
-            </ul>
-        </article>
-        <article>
-            <h4>Permalinks</h4>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Travel</a></li>
-                <li><a href="">Freediving</a></li>
-                <li><a href="">New stuff</a></li>
-                <li><a href="">Old STuff</a></li>
-            </ul>
-        </article>
-        </div>
-        <div class="footer__copyright">
-            <small>Copyright @ 2022 Richard Angapino</small>
-        </div>
-    </div>     
-</footer>
 
-<script src="./main.js"></script>
-</body>
-</html>
+<?php
+include 'partials/footer.php';
+?>

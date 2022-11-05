@@ -21,7 +21,7 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <!--<li><a href="signin.html">Signin</a></li> --> 
+                <!--<li><a href="signin.html">Signin</a></li> -->
                 <li class="nav__profile">
                     <div class="avatar">
                         <img src="./images/avatar1.jpg" alt="avatar">
@@ -38,8 +38,20 @@
         </div>
     </nav>
 
-    <section class="empty__page">
-        <h1>Contact Page</h1>
+
+    <section class="form__section">
+        <div class="container form__section-container">
+            <h2>Edit User</h2>
+            <form action="">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <select>
+                    <option value="0">Author</option>
+                    <option value="1">Admin</option>
+                </select>
+                <button class="btn" type="submit">Edit User</button>
+            </form>
+        </div>
     </section>
 
     <footer>
@@ -94,13 +106,12 @@
                     <li><a href="">Old STuff</a></li>
                 </ul>
             </article>
-            </div>
-            <div class="footer__copyright">
-                <small>Copyright @ 2022 Richard Angapino</small>
-            </div>
-        </div>     
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright @ 2022 Richard Angapino</small>
+        </div>
+        </div>
     </footer>
-    
-    <script src="./main.js"></script>
 </body>
+
 </html>
