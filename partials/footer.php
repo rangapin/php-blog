@@ -1,6 +1,4 @@
-<?php
-require 'config/database.php';
-?>
+<?php require 'config/database.php'; ?>
 
 <footer>
     <div class="footer__socials">
@@ -62,5 +60,7 @@ require 'config/database.php';
 </footer>
 
 <script src="./js/main.js"></script>
+
 </body>
+
 </php>

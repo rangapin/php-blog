@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <!--stylesheet-->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800;900&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
 </head>
@@ -23,7 +23,7 @@
                 <li><a href="<?php echo ROOT_URL ?>about.php">About</a></li>
                 <li><a href="<?php echo ROOT_URL ?>services.php">Services</a></li>
                 <li><a href="<?php echo ROOT_URL ?>contact.php">Contact</a></li>
-                <li><a href="<?php echo ROOT_URL ?>signin.php">Signin</a></li>
+                <!--<li><a href="<?php echo ROOT_URL ?>signin.php">Signin</a></li> -->
                 <li class="nav__profile">
                     <div class="avatar">
                         <img src="./images/avatar1.jpg" alt="avatar">

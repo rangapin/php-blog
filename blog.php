@@ -1,6 +1,4 @@
-<?php
-include 'partials/header.php';
-?>
+<?php include 'partials/header.php'; ?>
 
 <!-- SEARCH BAR -->
 
@@ -175,6 +173,4 @@ include 'partials/header.php';
     </div>
 </section>
 
-<?php
-include 'partials/footer.php';
-?>
+<?php include 'partials/footer.php'; ?>

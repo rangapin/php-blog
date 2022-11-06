@@ -1,6 +1,4 @@
-<?php
-include 'partials/header.php';
-?>
+<?php include 'partials/header.php'; ?>
 
 <section class="singlepost">
     <div class="container singlepost__container">
@@ -22,6 +20,4 @@ include 'partials/header.php';
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugit voluptatem voluptatum expedita architecto aliquam eum dicta neque distinctio suscipit blanditiis doloremque dolores ad aspernatur nostrum eveniet iusto, quibusdam alias excepturi reiciendis dignissimos enim? Nihil quidem dolorum ipsum perferendis, at quisquam vitae officiis doloremque eos in ullam labore culpa harum eligendi quos fuga. Quidem iste animi hic assumenda, quibusdam ea amet possimus unde modi, voluptas quae sed quasi sequi eius labore. Nisi, minus nihil! Sit quaerat similique a temporibus laboriosam!</p>
 </section>
 
-<?php
-include 'partials/footer.php';
-?>
+<?php include 'partials/footer.php'; ?>

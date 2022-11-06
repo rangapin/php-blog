@@ -1,6 +1,4 @@
-<?php
-include 'partials/header.php';
-?>
+<?php include 'partials/header.php'; ?>
 
 <header class="category__title">
     <h2>Category Title</h2>
@@ -165,6 +163,4 @@ include 'partials/header.php';
     </div>
 </section>
 
-<?php
-include 'partials/footer.php';
-?>
+<?php include 'partials/footer.php'; ?>
