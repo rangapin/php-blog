@@ -1,4 +1,5 @@
 <?php
+session_start();
 require 'config/database.php';
 
 //INPUT SANITIZATION
@@ -11,7 +12,7 @@ if (isset($_POST['submit'])) {
    $createpassword = filter_var($_POST['createpassword'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
    $confirmpassword = filter_var($_POST['confirmpassword'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
-//INPUT VALIDATION
+   //INPUT VALIDATION
 
    if (!$firstname) {
       $_SESSION['signup'] = "Please enter your First Name";
@@ -45,7 +46,7 @@ if (isset($_POST['submit'])) {
                if ($avatar['size'] < 1000000) {
                   move_uploaded_file($avatar_tmp_name, $avatar_destination_path);
                } else {
-                  $_SESSION['signup'] = 'File size should not exceed 1mb';
+                  $_SESSION['signup'] = 'File size should not exceed 1 MB';
                }
             } else {
                $_SESSION['signup'] = 'File should be png, jpg or jpeg';
@@ -54,8 +55,22 @@ if (isset($_POST['submit'])) {
       }
    }
 
+   if (isset($_SESSION['signup'])) {
+      $_SESSION['signup-data'] = $_POST;
+      header('location: ' . ROOT_URL . 'signup.php');
+      die();
+   } else {
 
-   
+      $insert_user_query = "INSERT INTO users SET firstname='$firstname', lastname='$lastname', username='$username', email='$email', password='$hashed_password', avatar='$avatar_name', is_admin=0";
+
+      $insert_user_result = mysqli_query($connection, $insert_user_query);
+
+      if (!mysqli_errno($connection)) {
+         $_SESSION['signup-success'] = "Registration successful. Please log in";
+         header('location: ' . ROOT_URL . 'signin.php');
+         die();
+      }
+   }
 } else {
    header('location: ' . ROOT_URL . 'signup.php');
    die();
