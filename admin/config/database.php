@@ -3,7 +3,7 @@ require 'constants.php';
 
 //connect to DB
 
-$connection = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+$connection = new mysqli("localhost", "root", '', "blog");
 if(mysqli_errno($connection)) {
     die(mysqli_error($connection));
 }
